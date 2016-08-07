@@ -18,6 +18,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
+Plugin 'jiangmiao/auto-pairs'
 
 " End Vundle
 call vundle#end()
@@ -54,8 +55,6 @@ colorscheme solarized
 
 set colorcolumn=80
 
-" From Chris' dotfile
-
 " Keep at least 4 lines below the cursor
 set scrolloff=4
 
@@ -72,3 +71,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+" Set leader to space
+let mapleader=" "
+
+noremap <Leader>s :w<CR>
+noremap <leader>q :q<cr>
