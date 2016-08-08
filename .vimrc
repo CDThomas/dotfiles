@@ -20,6 +20,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'mattn/emmet-vim'
+Plugin 'Valloric/MatchTagAlways'
 
 " End Vundle
 call vundle#end()
@@ -33,6 +34,13 @@ let g:ctrlp_use_caching = 0
 
 " Recognize JSX in .js files
 let g:jsx_ext_required = 0
+
+" Add js and jsx files for tag matching plugin
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xml' : 1,
+    \ 'javascript.jsx' : 1
+    \}
 
 " Recommended starting Syntastic settings
 set statusline+=%#warningmsg#
@@ -81,6 +89,7 @@ noremap <Leader>q :q<CR>
 
 " Emmet expansion with ctrl+e instead of default
 map <C-e> <C-y>,
+imap <C-e> <C-y>,
 
 " NERDTree shortcut
 map <C-n> :NERDTreeToggle<CR>
