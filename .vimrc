@@ -19,6 +19,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'mattn/emmet-vim'
 
 " End Vundle
 call vundle#end()
@@ -74,5 +75,9 @@ set noswapfile
 " Set leader to space
 let mapleader=" "
 
+" Quick save and quit
 noremap <Leader>s :w<CR>
-noremap <leader>q :q<cr>
+noremap <Leader>q :q<CR>
+
+" Emmet expansion with ctrl+e instead of default
+map <C-e> <C-y>,
