@@ -81,3 +81,6 @@ noremap <Leader>q :q<CR>
 
 " Emmet expansion with ctrl+e instead of default
 map <C-e> <C-y>,
+
+" NERDTree shortcut
+map <C-n> :NERDTreeToggle<CR>
