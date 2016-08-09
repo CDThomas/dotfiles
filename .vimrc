@@ -21,12 +21,18 @@ Plugin 'scrooloose/syntastic'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'mattn/emmet-vim'
 Plugin 'Valloric/MatchTagAlways'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " End Vundle
 call vundle#end()
 filetype plugin indent on
 
 runtime macros/matchit.vim
+
+" Airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
 
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
